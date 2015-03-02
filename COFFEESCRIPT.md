@@ -5,14 +5,14 @@ CoffeeScript is a very liberal language, that allows you to write code in a vari
 Inspired by: [CoffeeScript Style Guide](https://github.com/polarmobile/coffeescript-style-guide)
 
 ## Table of Contents
-  * [Optional Commas](#optional_commas)
-  * [Module Imports](#module_imports)
+  * [Optional Commas](#optional-commas)
+  * [Module Imports](#module-imports)
   * [Whitespace in Expressions and Statements](#whitespace)
   * [Functions](#functions)
   * [Strings](#strings)
   * [Conditionals](#conditionals)
-  * [Looping and Comprehensions](#looping_and_comprehensions)
-  * [Extending Native Objects](#extending_native_objects)
+  * [Looping and Comprehensions](#looping-and-comprehensions)
+  * [Extending Native Objects](#extending-native-objects)
   * [Exceptions](#exceptions)
   * [Annotations](#annotations)
   * [Miscellaneous](#miscellaneous)

@@ -9,12 +9,12 @@ This repository serves as a reference for our coding standarts, and an introduct
 * [HTML](https://github.com/swiftgift/guidelines/blob/master/HTML.md)
 
 ## Table of Contents
-  * [Tabs or Spaces?](#tabs_or_spaces)
-  * [Maximum Line Length](#maximum_line_length)
-  * [Blank Lines](#blank_lines)
-  * [Trailing Whitespace](#trailing_whitespace)
+  * [Tabs or Spaces?](#tabs-or-spaces)
+  * [Maximum Line Length](#maximum-line-length)
+  * [Blank Lines](#blank-lines)
+  * [Trailing Whitespace](#trailing-whitespace)
   * [Encoding](#encoding)
-  * [Naming Conventions](#naming_conventions)
+  * [Naming Conventions](#naming-conventions)
 
 ## Tabs or Spaces?
 
