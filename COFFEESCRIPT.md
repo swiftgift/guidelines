@@ -5,16 +5,9 @@ CoffeeScript is a very liberal language, that allows you to write code in a vari
 Inspired by: [CoffeeScript Style Guide](https://github.com/polarmobile/coffeescript-style-guide)
 
 ## Table of Contents
-  * [Code Layout](#code_layout)
-      * [Tabs or Spaces?](#tabs_or_spaces)
-      * [Maximum Line Length](#maximum_line_length)
-      * [Blank Lines](#blank_lines)
-      * [Trailing Whitespace](#trailing_whitespace)
-      * [Optional Commas](#optional_commas)
-      * [Encoding](#encoding)
+  * [Optional Commas](#optional_commas)
   * [Module Imports](#module_imports)
   * [Whitespace in Expressions and Statements](#whitespace)
-  * [Naming Conventions](#naming_conventions)
   * [Functions](#functions)
   * [Strings](#strings)
   * [Conditionals](#conditionals)
@@ -24,35 +17,7 @@ Inspired by: [CoffeeScript Style Guide](https://github.com/polarmobile/coffeescr
   * [Annotations](#annotations)
   * [Miscellaneous](#miscellaneous)
 
-<a name="code_layout"/>
-## Code layout
-
-<a name="tabs_or_spaces"/>
-### Tabs or Spaces?
-
-Use **spaces only**, with **2 spaces** per indentation level. Never mix tabs and spaces.
-
-<a name="maximum_line_length"/>
-### Maximum Line Length
-
-Limit all lines to a maximum of 90 characters. Going over the limit is tolerated, but frown upon. Please try to avoid it.
-
-<a name="blank_lines"/>
-### Blank Lines
-
-Separate top-level function and class definitions with a single blank line.
-
-Separate method definitions inside of a class with a single blank line.
-
-Use a single blank line within the bodies of methods or functions in cases where this improves readability (e.g., for the purpose of delineating logical sections).
-
-<a name="trailing_whitespace"/>
-### Trailing Whitespace
-
-Do not include trailing whitespace on any lines. Use plugins to highlight that for you.
-
-<a name="optional_commas"/>
-### Optional Commas
+## Optional Commas
 
 Avoid the use of commas before newlines when properties or elements of an Object or Array are listed on separate lines.
 
@@ -89,12 +54,8 @@ bar:
 
 ```
 
-<a name="encoding"/>
-### Encoding
+**[⬆ back to top](#table-of-contents)**
 
-UTF-8 is the source file encoding.
-
-<a name="module_imports"/>
 ## Module Imports
 
 CommonJS Modules `require` statements should be placed on separate lines.
@@ -109,7 +70,8 @@ These statements should be grouped in the following order:
 2. Third party library imports
 3. Local imports _(imports specific to this application or library)_
 
-<a name="whitespace"/>
+**[⬆ back to top](#table-of-contents)**
+
 ## Whitespace in Expressions and Statements
 
 Avoid extraneous whitespace in the following situations:
@@ -159,26 +121,8 @@ Additional recommendations:
            fooBar = 3
         ```
 
-<a name="naming_conventions"/>
-## Naming Conventions
+**[⬆ back to top](#table-of-contents)**
 
-Use `camelCase` (with a leading lowercase character) to name all variables, methods, and object properties.
-
-Use `CamelCase` (with a leading uppercase character) to name all classes.
-
-For constants, use all uppercase with underscores:
-
-```coffeescript
-CONSTANT_LIKE_THIS
-```
-
-Methods and variables that are intended to be "private" should begin with a leading underscore:
-
-```coffeescript
-_privateMethod: ->
-```
-
-<a name="functions"/>
 ## Functions
 
 _(These guidelines also apply to the methods of a class.)_
@@ -223,7 +167,8 @@ It is very important to follow this rule. CoffeeScript allows to omit parenthesi
 (($ '#selektor').addClass 'klass').hide() # RETARDED
 ```
 
-<a name="strings"/>
+**[⬆ back to top](#table-of-contents)**
+
 ## Strings
 
 Use string interpolation instead of string concatenation:
@@ -235,7 +180,8 @@ Use string interpolation instead of string concatenation:
 
 Prefer single quoted strings (`''`) instead of double quoted (`""`) strings, unless features like string interpolation are being used for the given string.
 
-<a name="conditionals"/>
+**[⬆ back to top](#table-of-contents)**
+
 ## Conditionals
 
 Favor `unless` over `if` for negative conditions.
@@ -270,7 +216,8 @@ Multi-line if/else clauses should use indentation:
   else ...
 ```
 
-<a name="looping_and_comprehensions"/>
+**[⬆ back to top](#table-of-contents)**
+
 ## Looping and Comprehensions
 
 Take advantage of comprehensions whenever possible:
@@ -298,19 +245,22 @@ object = one: 1, two: 2
 alert("#{key} = #{value}") for key, value of object
 ```
 
-<a name="extending_native_objects"/>
+**[⬆ back to top](#table-of-contents)**
+
 ## Extending Native Objects
 
 Do not modify native objects.
 
 For example, do not modify `Array.prototype` to introduce `Array#forEach`.
 
-<a name="exceptions"/>
+**[⬆ back to top](#table-of-contents)**
+
 ## Exceptions
 
 Do not suppress exceptions.
 
-<a name="annotations"/>
+**[⬆ back to top](#table-of-contents)**
+
 ## Annotations
 
 Use annotations when necessary to describe a specific action that must be taken against the indicated block of code.
@@ -341,7 +291,8 @@ Annotation types:
 
 If a custom annotation is required, the annotation should be documented in the project's README.
 
-<a name="miscellaneous"/>
+**[⬆ back to top](#table-of-contents)**
+
 ## Miscellaneous
 
 `and` is preferred over `&&`.
