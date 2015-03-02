@@ -2,7 +2,7 @@
 
 CoffeeScript is a very liberal language, that allows you to write code in a variety of ways. That leads to the codebase becoming sloppy over time. Let's remedy that by establishing a few rules to code by.
 
-Inspired by: [CoffeeScript Style Guide][https://github.com/polarmobile/coffeescript-style-guide]
+Inspired by: [CoffeeScript Style Guide](https://github.com/polarmobile/coffeescript-style-guide)
 
 ## Table of Contents
   * [Code Layout](#code_layout)
@@ -142,7 +142,7 @@ Additional recommendations:
            ```
 
     - augmented assignment: `+=`, `-=`, etc.
-    - comparisons: `<`, `>`, `<=`, `>=`, `unless`, etc.
+    - comparisons: `==`, `<`, `>`, `<=`, `>=`, `unless`, etc.
     - arithmetic operators: `+`, `-`, `*`, `/`, etc.
 
     - _(Do not use more than one space around these operators)_
