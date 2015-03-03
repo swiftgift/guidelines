@@ -58,7 +58,7 @@ Use px for font-size, because it offers absolute control over text. Additionally
 
 ## Specificity
 
-We never use IDs for styling. Leave dealing with IDs to JavaScript. Style with _class_es.
+We never use IDs for styling. Leave dealing with IDs to JavaScript. Style with classes.
 
 **[⬆ back to top](#table-of-contents)**
 
