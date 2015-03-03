@@ -7,6 +7,7 @@ Please also read [JavaScript Style Guide](https://github.com/swiftgift/guideline
 Inspired by: [CoffeeScript Style Guide](https://github.com/polarmobile/coffeescript-style-guide)
 
 ## Table of Contents
+  * [Naming Conventions](naming-conventions)
   * [Optional Commas](#optional-commas)
   * [Module Imports](#module-imports)
   * [Whitespace in Expressions and Statements](#whitespace)
@@ -18,6 +19,26 @@ Inspired by: [CoffeeScript Style Guide](https://github.com/polarmobile/coffeescr
   * [Exceptions](#exceptions)
   * [Annotations](#annotations)
   * [Miscellaneous](#miscellaneous)
+
+## Naming Conventions
+
+Use `camelCase` (with a leading lowercase character) to name all variables, methods, and object properties.
+
+Use `CamelCase` (with a leading uppercase character) to name all classes.
+
+For constants, use all uppercase with underscores:
+
+```coffeescript
+CONSTANT_LIKE_THIS
+```
+
+Methods and variables that are intended to be "private" should begin with a leading underscore:
+
+```coffeescript
+_privateMethod: ->
+```
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Optional Commas
 

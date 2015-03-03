@@ -49,23 +49,3 @@ Do not include trailing whitespace on any lines. Use plugins to highlight that f
 UTF-8 is the source file encoding.
 
 **[⬆ back to top](#table-of-contents)**
-
-## Naming Conventions
-
-Use `camelCase` (with a leading lowercase character) to name all variables, methods, and object properties.
-
-Use `CamelCase` (with a leading uppercase character) to name all classes.
-
-For constants, use all uppercase with underscores:
-
-```coffeescript
-CONSTANT_LIKE_THIS
-```
-
-Methods and variables that are intended to be "private" should begin with a leading underscore:
-
-```coffeescript
-_privateMethod: ->
-```
-
-**[⬆ back to top](#table-of-contents)**
