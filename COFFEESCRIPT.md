@@ -2,6 +2,8 @@
 
 This is how you're supposed to write your code in CoffeeScript.
 
+Please also read [JavaScript Style Guide](https://github.com/swiftgift/guidelines/blob/master/JAVASCRIPT.md)
+
 Inspired by: [CoffeeScript Style Guide](https://github.com/polarmobile/coffeescript-style-guide)
 
 ## Table of Contents
