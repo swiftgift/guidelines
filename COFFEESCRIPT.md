@@ -1,6 +1,6 @@
 # CoffeeScript Style Guide
 
-CoffeeScript is a very liberal language, that allows you to write code in a variety of ways. That leads to the codebase becoming sloppy over time. Let's remedy that by establishing a few rules to code by.
+This is how you're supposed to write your code in CoffeeScript.
 
 Inspired by: [CoffeeScript Style Guide](https://github.com/polarmobile/coffeescript-style-guide)
 
