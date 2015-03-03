@@ -1,6 +1,8 @@
 # Coding Style Guide
 
-This repository serves as a reference for our coding standarts, and an introduction to our products. You can read the common section, or jump to language specific pages.
+![Welcome](http://cdn.meme.am/instances/900x/54597147.jpg)
+
+This repository serves as a reference for our coding standarts, and an introduction to our products. You can read the common section, or jump to language specific pages. If you have any question that is not covered here, it's always a good idea to check on [MDN](https://developer.mozilla.org/en-US/) and [StackOverflow](http://stackoverflow.com)
 
 * [CoffeeScript](https://github.com/swiftgift/guidelines/blob/master/COFFEESCRIPT.md)
 * [Jade](https://github.com/swiftgift/guidelines/blob/master/JADE.md)

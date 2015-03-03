@@ -1,6 +1,6 @@
 # HTML Style Guide
 
-Write your HTML with taste!
+Write your HTML with taste! If you have any doubts, clear them up on this website: [http://html5doctor.com](http://html5doctor.com)
 
 ## Table of Contents
   * [General formatting](general-formatting)

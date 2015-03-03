@@ -1,6 +1,6 @@
 # CoffeeScript Style Guide
 
-This is how you're supposed to write your code in CoffeeScript.
+Grab a nice cuppa, and have a read. You can fine language spec here: [http://coffeescript.org](http://coffeescript.org). Remember to always keep your local coffee-script up to date: `npm install -g coffee-script`. For a quick js -> coffee conversion there is [http://js2.coffee](http://js2.coffee). Remember that you still have to edit the result.
 
 Please also read [JavaScript Style Guide](https://github.com/swiftgift/guidelines/blob/master/JAVASCRIPT.md)
 
@@ -342,3 +342,5 @@ console.log(args...) # GOOD
 
 (a, b, c, rest...)-> # GOOD
 ```
+
+**[⬆ back to top](#table-of-contents)**

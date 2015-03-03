@@ -1,6 +1,6 @@
 # Stylus Style Guide
 
-A Stylus guide. No other way of writing stylus is valid.
+A Stylus guide. No other way of writing stylus is valid. Please read [SMACSS](https://smacss.com). If you don't know if you can use a certain styling thingy, use [http://caniuse.com](http://caniuse.com) to check. Language reference can be found here: [http://learnboost.github.io/stylus/](http://learnboost.github.io/stylus/).
 
 ## Table of Contents
   * [Naming conventions](#naming-conventions)

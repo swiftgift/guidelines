@@ -1,6 +1,6 @@
 # JavaScript Style Guide
 
-*A mostly reasonable approach to JavaScript*
+*A mostly reasonable approach to JavaScript*. Read the fine manual here: [http://bonsaiden.github.io/JavaScript-Garden/](http://bonsaiden.github.io/JavaScript-Garden/). Bonus read: [http://eloquentjavascript.net](http://eloquentjavascript.net).
 
 Inspired by: [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript/blob/master/README.md)
 
@@ -898,5 +898,4 @@ Inspired by: [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascrip
     });
     ```
 
-  **[⬆ back to top](#table-of-contents)**
-
+**[⬆ back to top](#table-of-contents)**
