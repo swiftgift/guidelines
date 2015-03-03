@@ -1,6 +1,6 @@
 # Stylus Style Guide
 
-A Stylus guide. No other way of writing stylus is valid. Please read [SMACSS](https://smacss.com). If you don't know if you can use a certain styling thingy, use [http://caniuse.com](http://caniuse.com) to check. Language reference can be found here: [http://learnboost.github.io/stylus/](http://learnboost.github.io/stylus/).
+A Stylus guide. No other way of writing stylus is valid. Please read [SMACSS](https://smacss.com). If you don't know if you can use a certain styling thingy, use [http://caniuse.com](http://caniuse.com) to check. Language reference: [http://learnboost.github.io/stylus/](http://learnboost.github.io/stylus/).
 
 ## Table of Contents
   * [Naming conventions](#naming-conventions)
@@ -44,6 +44,31 @@ We are using a subset of [SMACSS](https://smacss.com) and use prefixes to separa
 
 ```
 
+Nested classes inherit first letter of it's ancestor name, This allows greater flexibility and name reuse. Example:
+
+```jade
+//- This is the markup
+header.l-header
+  h1.l-h-logo
+  nav.l-h-nav
+    a.l-h-n-item(href="/about") About
+
+```
+
+```stylus
+.l-header
+  overflow: hidden
+
+  .l-h-logo
+    font-size: 20px
+
+  .l-h-nav
+    float: right
+
+  .l-h-n-item
+    font-style: italic
+```
+
 As a rule of thumb, avoid unnecessary nesting in Stylus. At most, aim for three levels. If you cannot help it, step back and rethink your overall strategy (either the specificity needed, or the layout of the nesting).
 
 Always put a class on everything. It is only OK to use a tagName if you're deeply nested, and styling a leef node.
@@ -52,13 +77,13 @@ Always put a class on everything. It is only OK to use a tagName if you're deepl
 
 ## Units
 
-Use px for font-size, because it offers absolute control over text. Additionally, unit-less line-height is preferred because it does not inherit a percentage value of its parent element, but instead is based on a multiplier of the font-size.
+Use `px` for `font-size`, because it offers absolute control over text. Additionally, unit-less `line-height` is preferred because it does not inherit a percentage value of its parent element, but instead is based on a multiplier of the `font-size`.
 
 **[⬆ back to top](#table-of-contents)**
 
 ## Specificity
 
-We never use IDs for styling. Leave dealing with IDs to JavaScript. Style with classes.
+We never use Ids for styling. Leave dealing with Ids to JavaScript. Style with classes.
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -137,18 +162,17 @@ URLs and font names should be quoted:
 
 ```stylus
 // GOOD
-$font-stack: 'Helvetica Neue Light', 'Helvetica', 'Arial', sans-serif
+$font_stack: 'Helvetica Neue Light', 'Helvetica', 'Arial', sans-serif
 
 // BAD
-$font-stack: "Helvetica Neue Light", "Helvetica", "Arial", sans-serif
+$font_stack: "Helvetica Neue Light", "Helvetica", "Arial", sans-serif
 
 // BAD
-$font-stack: Helvetica Neue Light, Helvetica, Arial, sans-serif
+$font_stack: Helvetica Neue Light, Helvetica, Arial, sans-serif
 
 // GOOD
 .foo
   background-image: url('/images/kittens.jpg')
-
 
 // BAD
 .foo
@@ -247,7 +271,7 @@ When using HSL or RGB notation, always add a single space after a comma (,) and 
 
 ## Imports
 
-We place all imports in the main file. No nested imports should be made.
+We place all imports in the main file. No nested imports please. Only exception: dedicated vendor imports file.
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -259,7 +283,7 @@ Avoid using extend unless you have to. Please use mixins instead.
 
 ## Functions
 
-We prefer using mixins over functions. If a function is absolutely necessary, document where it is used and why it wasn't possible to create a mixin instead.
+We prefer using mixins over functions. If a function is absolutely necessary, document where it is used and why it wasn't possible to create a mixin.
 
 **[⬆ back to top](#table-of-contents)**
 

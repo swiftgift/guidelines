@@ -13,8 +13,9 @@ Write your HTML with taste! If you have any doubts, clear them up on this websit
 ## General formatting
 
   * Use double quotes for attributes. This is the HTML way.
-  * Paragraphs of text should always be placed in a `<p>` tag. Never use multiple `<br>` tags.
-  * Items in list form should always be in `<ul>`, `<ol>`, or `<dl>`. Never use a set of `<div>` or `<p>`.
+  * Use semantically appropriate tags
+    * Paragraphs of text should always be placed in a `<p>` tag. Never use multiple `<br>` tags.
+    * Items in list form should always be in `<ul>`, `<ol>`, or `<dl>`. Never use a set of `<div>` or `<p>`.
   * Every form input that has text attached should utilize a `<label>` tag. Especially radio or checkbox elements.
   * Even though quotes around attributes is optional, always put quotes around attributes for readability.
   * Avoid writing closing tag comments, like `<!-- /.element -->`. This just adds to page load time. Plus, most editors have indentation guides and open-close tag highlighting.

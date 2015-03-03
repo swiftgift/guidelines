@@ -1,6 +1,6 @@
 # Jade Style Guide
 
-We use jade over pure html to avoid markup closure errors and to improve templates readability. Except for directives where there can be custom HTML tags, **HTML must be valid**. Always remember, that underneath all of the fancyness it's plain JavaScript, so same rules apply.
+We use jade over pure html to avoid markup closure errors and to improve templates readability. **HTML must be valid**. Always remember, that underneath all of the Jade's fancyness it's plain JavaScript, so same rules apply.
 
 You can find language reference here: [http://jade-lang.com](http://jade-lang.com).
 
@@ -23,13 +23,13 @@ Please also read [HTML Style Guide](https://github.com/swiftgift/guidelines/blob
   * Responsive classes should be placed at the end
 
 ```jade
-h1#id.l-h-title.col-md-6 // GOOD
+h1#id.l-h-title.col-md-6 //- GOOD
 
-h1#id.col-md-6.l-h-title // BAD
+h1#id.col-md-6.l-h-title //- BAD
 
-h1.l-h-title#id // BAD
+h1.l-h-title#id //- BAD
 
-h1#id(class="l-h-title") // BAD
+h1#id(class="l-h-title") //- BAD
 ```
 
 **[⬆ back to top](#table-of-contents)**
@@ -46,10 +46,10 @@ Prefer jade control structures.
 
 When outputting only a variable, use `tag= var` , not `tag #{var}`.
 
-If you are declaring a new variable yourself, remember that jade creates a local JavaScript scope for each template. Use `var` statements and you'll be fine:
+If you are declaring a new variable yourself, remember that Jade creates a local scope for each template. Use `var` statements and you'll be fine:
 
 ```jade
-- var _klass = null
+- var _class = null
 ```
 
 **[⬆ back to top](#table-of-contents)**
@@ -66,10 +66,10 @@ a(href="/#{link}") Cap'n Awesome
 
 ## JSON
 
-When you output JSON and raw javascript you need to always:
+When you output JSON and raw JavaScript you need to always:
 
   1. Use unescaped version of output
-  2. Stringify the onject yourself
+  2. Stringify the object yourself
   3. Sanitize potentially unsafe strings to avoid possible XSS
 
 ```jade
@@ -77,7 +77,7 @@ When you output JSON and raw javascript you need to always:
 script.
   var app = {
     config: !{JSON.stringify(config)},
-    env: !{helpers.sanitizeString(JSON.stringify(env))}
+    env: !{jade.helpers.sanitizeString(JSON.stringify(env))}
   };
 
 ```
@@ -86,6 +86,6 @@ script.
 
 ## Helpers
 
-We use one helpers file that should run on both client and server. Your templates, with minor exceptions, should be compatible with both server and client too. You should **NOT** use any environment-related variables or tools in your template. You should **NOT** put business logic in the templates. Only minimal data manipulation is allowed. If it requires more, put it in the View.
+We use one helpers file that should run on both client and server. Your templates, with rare exceptions, should be compatible with both server and client too. You should **NOT** use any environment related variables or tools in your template. You should **NOT** put business logic in the templates. Only minimal data manipulation is allowed. If it requires more, put it in the View.
 
 **[⬆ back to top](#table-of-contents)**

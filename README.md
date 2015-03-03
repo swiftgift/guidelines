@@ -17,6 +17,7 @@ This repository serves as a reference for our coding standarts, and an introduct
   * [Trailing Whitespace](#trailing-whitespace)
   * [Encoding](#encoding)
   * [Naming Conventions](#naming-conventions)
+  * [Annotations](#annotations)
 
 ## Tabs or Spaces?
 
@@ -42,10 +43,42 @@ Use a single blank line within the bodies of methods or functions in cases where
 
 ## Trailing Whitespace
 
-Do not include trailing whitespace on any lines. Use plugins to highlight that for you.
+Do not leave trailing whitespaces. Use plugins to highlight that for you.
 
 ## Encoding
 
 UTF-8 is the source file encoding.
+
+**[⬆ back to top](#table-of-contents)**
+
+## Annotations
+
+Use annotations when necessary to describe a specific action that must be taken against the indicated block of code.
+
+Write the annotation on the line immediately above the code that the annotation is describing.
+
+The annotation keyword should be followed by a colon and a space, and a descriptive note.
+
+```coffeescript
+  # FIXME: The client's current state should *not* affect payload processing.
+  resetClientState()
+  processPayload()
+```
+
+If multiple lines are required by the description, indent subsequent lines with two spaces:
+
+```coffeescript
+  # TODO: Ensure that the value returned by this call falls within a certain
+  #   range, or throw an exception.
+  analyze()
+```
+
+Annotation types:
+
+- `TODO`: describe missing functionality that should be added at a later date
+- `FIXME`: describe broken code that must be fixed
+- `REVIEW`: describe code that should be reviewed to confirm implementation
+
+If a custom annotation is required, the annotation should be documented in the project's README.
 
 **[⬆ back to top](#table-of-contents)**

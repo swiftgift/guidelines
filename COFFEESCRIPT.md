@@ -1,6 +1,6 @@
 # CoffeeScript Style Guide
 
-Grab a nice cuppa, and have a read. You can fine language spec here: [http://coffeescript.org](http://coffeescript.org). Remember to always keep your local coffee-script up to date: `npm install -g coffee-script`. For a quick js -> coffee conversion there is [http://js2.coffee](http://js2.coffee). Remember that you still have to edit the result.
+Grab a nice cuppa and have a read. You can find the language reference here: [http://coffeescript.org](http://coffeescript.org). Remember to always keep your local CoffeeScript up to date: `npm install -g coffee-script`. For a quick js -> coffee conversion there is [http://js2.coffee](http://js2.coffee). Remember that you still have to edit the result.
 
 Please also read [JavaScript Style Guide](https://github.com/swiftgift/guidelines/blob/master/JAVASCRIPT.md)
 
@@ -17,7 +17,6 @@ Inspired by: [CoffeeScript Style Guide](https://github.com/polarmobile/coffeescr
   * [Looping and Comprehensions](#looping-and-comprehensions)
   * [Extending Native Objects](#extending-native-objects)
   * [Exceptions](#exceptions)
-  * [Annotations](#annotations)
   * [Miscellaneous](#miscellaneous)
 
 ## Naming Conventions
@@ -281,38 +280,6 @@ For example, do not modify `Array.prototype` to introduce `Array#forEach`.
 ## Exceptions
 
 Do not suppress exceptions.
-
-**[⬆ back to top](#table-of-contents)**
-
-## Annotations
-
-Use annotations when necessary to describe a specific action that must be taken against the indicated block of code.
-
-Write the annotation on the line immediately above the code that the annotation is describing.
-
-The annotation keyword should be followed by a colon and a space, and a descriptive note.
-
-```coffeescript
-  # FIXME: The client's current state should *not* affect payload processing.
-  resetClientState()
-  processPayload()
-```
-
-If multiple lines are required by the description, indent subsequent lines with two spaces:
-
-```coffeescript
-  # TODO: Ensure that the value returned by this call falls within a certain
-  #   range, or throw an exception.
-  analyze()
-```
-
-Annotation types:
-
-- `TODO`: describe missing functionality that should be added at a later date
-- `FIXME`: describe broken code that must be fixed
-- `REVIEW`: describe code that should be reviewed to confirm implementation
-
-If a custom annotation is required, the annotation should be documented in the project's README.
 
 **[⬆ back to top](#table-of-contents)**
 
