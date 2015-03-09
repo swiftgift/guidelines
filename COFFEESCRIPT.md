@@ -129,8 +129,8 @@ Additional recommendations:
         - _Note that this also applies when indicating default parameter value(s) in a function declaration_
 
            ```coffeescript
-           test: (param = null)-> # GOOD
-           test: (param=null)-> # BAD
+           test: (param = null) -> # GOOD
+           test: (param=null) -> # BAD
            ```
 
     - augmented assignment: `+=`, `-=`, etc.
@@ -157,11 +157,11 @@ Additional recommendations:
 
 _(These guidelines also apply to the methods of a class.)_
 
-When declaring a function that takes arguments, don't use any spaces after the closing parenthesis of the arguments list:
+When declaring a function that takes arguments, use one space after the closing parenthesis of the arguments list:
 
 ```coffeescript
-foo = (arg1, arg2)-> # GOOD
-foo = (arg1, arg2) -> # BAD
+foo = (arg1, arg2) -> # GOOD
+foo = (arg1, arg2)-> # BAD
 ```
 
 Do not use parentheses when declaring functions that take no arguments:
@@ -175,10 +175,10 @@ In cases where method calls are being chained and the code does not fit on a sin
 
 ```coffeescript
 [1..3]
-  .map((x)-> x * x)
+  .map((x) -> x * x)
   .concat([10..12])
-  .filter((x)-> x < 11)
-  .reduce((x, y)-> x + y)
+  .filter((x) -> x < 11)
+  .reduce((x, y) -> x + y)
 ```
 
 When calling functions, never omit parentheses:
@@ -336,7 +336,7 @@ Use splats (`...`) when working with functions that accept variable numbers of a
 ```coffeescript
 console.log(args...) # GOOD
 
-(a, b, c, rest...)-> # GOOD
+(a, b, c, rest...) -> # GOOD
 ```
 
 **[⬆ back to top](#table-of-contents)**
