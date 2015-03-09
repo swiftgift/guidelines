@@ -37,6 +37,14 @@ Methods and variables that are intended to be "private" should begin with a lead
 _privateMethod: ->
 ```
 
+For JSON-replies or JSON-like data please use underscore notation:
+```coffeescript
+largeJsonObj =
+  awesome: true
+  my_var: 'legit'
+  another_var: 'sure thing bruv'
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Optional Commas
