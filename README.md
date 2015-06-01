@@ -9,6 +9,7 @@ This repository serves as a reference for our coding standarts, and an introduct
 * [Stylus](https://github.com/swiftgift/guidelines/blob/master/STYLUS.md)
 * [JavaScript](https://github.com/swiftgift/guidelines/blob/master/JAVASCRIPT.md)
 * [HTML](https://github.com/swiftgift/guidelines/blob/master/HTML.md)
+* [Objective-C](https://github.com/swiftgift/guidelines/blob/master/ObjectiveC.md)
 
 ## Table of Contents
   * [Tabs or Spaces?](#tabs-or-spaces)
